@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+    font-family: 'Popping', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.wrapper {
+    width: 80vw;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+
+}
+.toggle-menu
+{
+    display: none;
+}
+
+
+
+.menu li {
+    list-style: none;
+
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /*position: fixed;*/
+}
+
+.tittle_h1 {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 1em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+    background-color: blue;
+}
+.tittle_h1_1{
+    color: #ffffff;
+    font-size: 30px;
+    padding: 1em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+}    
+
+
+.parrafo_inicio{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0% auto;
+    overflow: hidden;
+    
+}
+.parrafo_inicio p{
+    padding: 2em;
+    text-align: center;
+    color: #ffffff;
+    
+}
+.parrafo_2{
+    display: none;
+}
+
+.Cabeza {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+.Cabeza p{
+    text-align: 1em;
+}
+.navbar img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+/*sobre nosotros*/
+
+    .sobre_nosotros{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    
+        
+    }    
+    .sobre_nosotros .container{
+        text-align: center;
+    }
+    .slider{
+        width: 30%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .slider ul{
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: cambio 10s infinite alternate ;
+        animation-timing-function: ease-in;
+    }
+    .slider li{
+        width: 100%;
+        list-style: none;
+    }
+    .slider img {
+        width: 100%;
+    }
+    @keyframes cambio {
+        0% { margin-left: 0; }
+        20% { margin-left: 0; }
+    
+        25% {margin-left: -100%; }
+        45% {margin-left: -100%; }
+    
+        50% {margin-left: -200%; }
+        70% {margin-left: -200%; }
+    
+        75% {margin-left: -200%; }
+        100% {margin-left: -200%; }
+    }
+    .sobre_nosotros p{
+        text-align: center;
+        padding: 1em;
+        line-height: 30px;
+    }
+
+/* catalogo */
+.Catalogo{
+    background-color: rgb(225, 240, 250);
+}
+.card {
+    justify-content: center;
+    justify-items: center;  
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: 1em;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;   
+}
+
+.card_title img{
+    
+    width: 100%;
+    height: 260px;
+
+}
+.Catalogo .container{
+    display: flex;
+}
+.sub_tittle{
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.card_img {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+}
+
+.card_title {
+    padding: 10px;
+    text-align: center;
+}
+.Catalogo h2{
+    color: rgb(0, 38, 255);
+}
+.Catalogo p{
+    text-align: center;
+    padding: 1em;
+    line-height: 30px;
+}
+/*lugares donde puede encontrar*/
+.testimony{
+    background-color: #e5e5f7;
+}
+
+.Donde_estamos .container{
+    max-width: 700px;
+}
+
+.decoracion{
+    background-color: aqua;
+    color: black;
+    display: inline-block;
+    padding: 5px;
+}
+.Donde_estamos .container text{
+    
+    margin-bottom: 1em;
+    color: black;
+    font-size: 1.5em;
+}
+.Donde_estamos{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+
+}
+.container{
+    grid-column: 5/10;
+    padding: 3em;
+
+}
+
+.content {
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+/* pie de pagina*/
+footer-content {
+
+    text-align: center;
+}
+.footer{
+    background-color: aqua;
+}
+
+.footer-content h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.footer-content h4 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.sotial-networks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 1em;
+    align-items: center;
+    
+}
+
+.sotial-networks i {
+    font-size: 1.5em;
+}
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom:30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
+@media screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 50%;
+        background-color: rgb(198, 218, 223);
+        z-index: 1;
+        transform: translateX(-110%);
+        transition: all .5s ease-in-out;
+
+    }
+
+    .show-menu {
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu li {
+        margin: 2em;
+    }
+
+    .toggle-menu {
+        display: block;
+        margin-left: 90%;
+    }
+
+    .fa-bars {
+        font-size: 1.5em;
+        margin-top: -.2em;
+        color: #fff;
+    }
+
+    .fa-close {
+        font-size: 1.7em;
+        display: none;
+    }
+    .parrafo{
+        display: none;
+    }
+    .parrafo_2{
+        display: block;
+    }
+    .subtitle{
+        display:grid;
+    }
+    .Catalogo .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-left: 50px;
+    }
+    .none{
+        display: none;
+    }
+}

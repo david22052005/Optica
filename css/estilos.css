@@ -42,7 +42,14 @@ html{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    
     /*position: fixed;*/
+}
+.active{
+    background-color: #ffffff;
+    color: #0df053;
+    border-radius: 10px;
+
 }
 
 .tittle_h1 {
@@ -72,7 +79,7 @@ html{
     
 }
 .parrafo_inicio p{
-    padding: 2em;
+    padding: 4em;
     text-align: center;
     color: #ffffff;
     
@@ -152,7 +159,7 @@ html{
     }
     .sobre_nosotros p{
         text-align: center;
-        padding: 1em;
+        padding: 5em;
         line-height: 30px;
     }
 
@@ -204,7 +211,7 @@ html{
 }
 .Catalogo p{
     text-align: center;
-    padding: 1em;
+    padding: 3em;
     line-height: 30px;
 }
 /*lugares donde puede encontrar*/
@@ -307,7 +314,7 @@ footer-content {
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         width: 50%;
         background-color: rgb(198, 218, 223);
         z-index: 1;
@@ -340,6 +347,9 @@ footer-content {
         font-size: 1.7em;
         display: none;
     }
+    .active{
+        
+    }
     .parrafo{
         display: none;
     }
@@ -355,8 +365,17 @@ footer-content {
     }
     .card{
         margin-left: 50px;
+        margin-left: 25%;
     }
     .none{
+        display: none;
+    }
+    .Catalogo p{
+        text-align: center;
+        padding: 1em;
+        line-height: 20px;
+    }
+    .subtitle{
         display: none;
     }
 }

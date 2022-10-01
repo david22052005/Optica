@@ -18,6 +18,7 @@ html{
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    
 
 }
 .toggle-menu
@@ -350,6 +351,9 @@ footer-content {
     }
     .active{
         background-color: transparent;
+    }
+    .navbar{
+        text-align: left;
     }
     .parrafo{
         display: none;

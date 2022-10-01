@@ -46,8 +46,8 @@ html{
     /*position: fixed;*/
 }
 .active{
+    
     background-color: #ffffff;
-    color: #0df053;
     border-radius: 10px;
 
 }
@@ -346,9 +346,10 @@ footer-content {
     .fa-close {
         font-size: 1.7em;
         display: none;
+        color: #fff;
     }
     .active{
-        
+        background-color: transparent;
     }
     .parrafo{
         display: none;
@@ -358,6 +359,11 @@ footer-content {
     }
     .subtitle{
         display:grid;
+    }
+    .sobre_nosotros p{
+        text-align: center;
+        padding: 1em;
+        line-height: 30px;
     }
     .Catalogo .container{
         display: flex;
@@ -378,4 +384,7 @@ footer-content {
     .subtitle{
         display: none;
     }
+    .mapa{
+        width: 300px;
+}
 }
